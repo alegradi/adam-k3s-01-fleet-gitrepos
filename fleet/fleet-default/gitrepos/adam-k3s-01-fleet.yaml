@@ -4,7 +4,7 @@ metadata:
   name: adam-k3s-01-fleet
   namespace: fleet-default
 spec:
-  branch: main
+  branch: master
   clientSecretName: adam-k3s-01-github-ssh-key
   repo: git@github.com:alegradi/adam-k3s-01-fleet.git
   targets:
