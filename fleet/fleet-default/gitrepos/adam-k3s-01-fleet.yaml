@@ -1,0 +1,12 @@
+apiVersion: fleet.cattle.io/v1alpha1
+kind: GitRepo
+metadata:
+  name: adam-k3s-01-fleet
+  namespace: fleet-default
+spec:
+  branch: main
+  clientSecretName: adam-k3s-01-github-ssh-key
+  repo: git@github.com:alegradi/adam-k3s-01-fleet.git
+  targets:
+    - clusterName: c-xmkxq
+  keepResources: true  # Do not delete resources even if the gitrepo is removed
